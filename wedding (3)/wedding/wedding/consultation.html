@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultation Form</title>
+  <link rel="stylesheet" href="wedding.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Form -->
+<div class="form-container">
+    <form action="submit-form.php" method="post">
+        <h2>Schedule a Consultation</h2>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="Phone">Phone Number</label>
+            <input type="phone" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="package">Package</label>
+            <select id="package" name="package" required>
+                <option value="">Select Package</option>
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="premium">Premium</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Special Request</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
